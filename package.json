@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ravshan01/is-empty/issues"
   },
-  "homepage": "https://github.com/ravshan01/is-empty#readme"
+  "homepage": "https://github.com/ravshan01/is-empty#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
