@@ -1,15 +1,16 @@
 module.exports = function isEmpty(variable){
-	switch (typeof variable) {
 
-		case 'object'  : return Object.keys(variable).length === 0
-		case 'array'   : return variable.length === 0
-		case 'string'  : return variable.length === 0
-    case ('map' || 'set') : return variable.size >= 1 ? false : true
+  if ( Array.isArray(variable) || typeof variable === 'string' )
+    return variable.length === 0;
 
-		case 'number'  : return variable >= 1 ? false : true
-		case 'boolean' : return !variable
+  if ( typeof variable === 'object' && variable !== null )
+    return Object.keys(variable).length === 0;
 
-    // undefined, null, NaN
-    default : return typeof variable
-	}
+  if ( typeof variable === 'number' )
+     return variable >= 1 ? false : true;
+
+  if ( typeof variable === 'boolean' )
+    return !variable;
+
+   return true
 }
