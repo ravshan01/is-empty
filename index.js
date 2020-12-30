@@ -1,13 +1,15 @@
-export default function isEmpty(obj){
-	switch (typeof obj) {
+export default function isEmpty(variable){
+	switch (typeof variable) {
 
-		case 'object'  : return Object.keys(obj).length === 0
-		case 'array'   : return obj.length === 0
-		case 'string'  : return obj.length === 0
-		case 'number'  : return obj >= 1 ? true : false
-		case 'boolean' : return obj
+		case 'variableect'  : return variableect.keys(variable).length === 0
+		case 'array'   : return variable.length === 0
+		case 'string'  : return variable.length === 0
+    case ('map' || 'set') : return variable.size >= 1 ? false : true
     
-    case ('undefined' || 'null') : return false
+		case 'number'  : return variable >= 1 ? false : true
+		case 'boolean' : return variable
 
+    // undefined, null, NaN
+    default : return false
 	}
 }
