@@ -1,7 +1,7 @@
 module.exports = function isEmpty(variable){
 	switch (typeof variable) {
 
-		case 'variable'  : return Object.keys(variable).length === 0
+		case 'object'  : return Object.keys(variable).length === 0
 		case 'array'   : return variable.length === 0
 		case 'string'  : return variable.length === 0
     case ('map' || 'set') : return variable.size >= 1 ? false : true
@@ -10,6 +10,6 @@ module.exports = function isEmpty(variable){
 		case 'boolean' : return !variable
 
     // undefined, null, NaN
-    default : return false
+    default : return typeof variable
 	}
 }
