@@ -1,0 +1,19 @@
+{
+  "name": "is-empty",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravshan01/is-empty.git"
+  },
+  "author": "Ravshan Selimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravshan01/is-empty/issues"
+  },
+  "homepage": "https://github.com/ravshan01/is-empty#readme"
+}
