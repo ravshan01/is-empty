@@ -2,6 +2,7 @@
 function to check for null values
 
 
+
 ## Installation
 ```
 npm install @ravshan01/isEmpty
