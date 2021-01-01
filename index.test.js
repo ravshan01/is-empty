@@ -23,6 +23,9 @@ test('positive number', () => expect( isEmpty(5) ).toBe(false) );
 test('false boolean', () => expect( isEmpty(false) ).toBe(true) );
 test('true boolean',  () => expect( isEmpty(true) ).toBe(false) );
 
-test('undefined', () => expect( isEmpty(undefined) ).toBe(true) );
+test('empty Symbol', () => expect( isEmpty(Symbol()) ).toBe(true) );
+test('data Symbol', () => expect( isEmpty(Symbol('Hello')) ).toBe(false) );
+
+test('undefined', () => expect( isEmpty(undefined) ).toBe(true) )
 test('null', () => expect( isEmpty(null) ).toBe(true) );
 test('NaN', () => expect( isEmpty(NaN) ).toBe(true) );

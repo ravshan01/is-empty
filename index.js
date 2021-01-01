@@ -13,6 +13,10 @@ module.exports = function isEmpty(variable){
   if ( typeof variable === 'boolean' ){
     return !variable
   }
+  if ( typeof variable === 'symbol' ){
+    return isEmpty(variable.description)
+  }
+
   if ( variable === undefined || variable === null || variable === NaN ){
     return true
   }
