@@ -25,4 +25,4 @@ test('true boolean',  () => expect( isEmpty(true) ).toBe(false) );
 
 test('undefined', () => expect( isEmpty(undefined) ).toBe(true) );
 test('null', () => expect( isEmpty(null) ).toBe(true) );
-test('Nan', () => expect( isEmpty(NaN) ).toBe(true) );
+test('NaN', () => expect( isEmpty(NaN) ).toBe(true) );

@@ -1,4 +1,4 @@
-module.exports = function isEmpty(variable){
+module.exports = function isEmpty(variable){ 
 
   if ( Array.isArray(variable) || typeof variable === 'string' ){
     return variable.length === 0
