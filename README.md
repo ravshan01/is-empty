@@ -12,25 +12,25 @@ yarn add @ravshan01/isEmpty
 
 ## Example
 ```javascript
-  const empty = require('@ravshan01/is-empty');
+  const isEmpty = require('@ravshan01/is-empty');
 
-  empty([]);              // true
-  empty({});              // true
-  empty('');              // true
-  empty(0);               // true
-  empty(function(){});    // true
-  empty(null);            // true
-  empty(undefined);       // true
-  empty(new Map());       // true
-  empty(new Set());       // true
+  isEmpty([]);              // true
+  isEmpty({});              // true
+  isEmpty('');              // true
+  isEmpty(0);               // true
+  isEmpty(function(){});    // true
+  isEmpty(null);            // true
+  isEmpty(undefined);       // true
+  isEmpty(new Map());       // true
+  isEmpty(new Set());       // true
 
-  empty(true);            // false
-  empty(false);           // false
-  empty(['a', 'b']);      // false
-  empty({ a: 'b' });      // false
-  empty('string');        // false
-  empty(42);              // false
-  empty(function(a,b){}); // false
-  empty(new Map([['key', 'value']])); // false
-  empty(new Set([1]));    // false
+  isEmpty(true);            // false
+  isEmpty(false);           // false
+  isEmpty(['a', 'b']);      // false
+  isEmpty({ a: 'b' });      // false
+  isEmpty('string');        // false
+  isEmpty(42);              // false
+  isEmpty(function(a,b){}); // false
+  isEmpty(new Map([['key', 'value']])); // false
+  isEmpty(new Set([1]));    // false
 ```
