@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/ravshan01/is-empty.git"
   },
+  "keywords": [
+    "empty",
+    "is-empty"
+  ],
   "author": "Ravshan Selimov",
   "license": "ISC",
   "bugs": {
